@@ -64,9 +64,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.is_type=1 \
     vidc.enc.dcvs.extra-buff-count=2
 
-# CNE
+# CNE/DPM
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.cne.feature=1
+    persist.vendor.cne.feature=1 \
+    persist.vendor.dpm.feature=0
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
