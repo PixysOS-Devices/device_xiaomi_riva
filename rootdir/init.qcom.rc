@@ -167,10 +167,6 @@ on post-fs-data
 
     # Create directory for TZ Apps
     mkdir /data/misc/qsee 0770 system system
-
-    # Create folder for mm-qcamera-daemon
-    mkdir /data/misc/camera 0770 camera camera
-
     mkdir /data/vendor/ramdump 0771 root system
     mkdir /data/vendor/bluetooth 0770 bluetooth bluetooth
     mkdir /data/vendor/ramdump/bluetooth 0770 bluetooth bluetooth
@@ -272,10 +268,6 @@ on property:init.svc.qcom-post-boot=stopped
     write /sys/module/cpu_input_boost/parameters/input_boost_freq 1094400
     write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
     write /sys/block/mmcblk0/queue/scheduler anxiety
-
-on property:vold.decrypt=trigger_restart_framework
-    restart vendor.camera-provider-2-4
-    restart vendor.audio-hal-2-0
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
