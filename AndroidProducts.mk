@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_riva.mk
+    $(LOCAL_DIR)/pixys_riva.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_riva-user \
-    aosp_riva-userdebug
+    pixys_riva-user \
+    pixys_riva-userdebug

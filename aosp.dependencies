@@ -1,13 +1,13 @@
 [
  {
     "remote":      "github",
-    "repository":  "PixelExperience-Devices/kernel_xiaomi_msm8917",
+    "repository":  "PixysOS-Devices/kernel_xiaomi_msm8917",
     "target_path": "kernel/xiaomi/msm8917",
     "branch":      "ten"
   },
   {
     "remote":      "github",
-    "repository":  "PixelExperience-Devices/vendor_xiaomi",
+    "repository":  "PixysOS-Devices/vendor_xiaomi",
     "target_path": "vendor/xiaomi",
     "branch":      "ten"
   }
